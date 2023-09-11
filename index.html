@@ -35,6 +35,9 @@
     <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
     <!--[if !mso]><!-->
     <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!--<![endif]-->
 
     <!-- Web Font / @font-face : END -->
@@ -204,16 +207,10 @@
     <!-- Progressive Enhancements : END -->
 
 </head>
-<!--
-	The email background color (#222222) is defined in three places:
-	1. body tag: for most email clients
-	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
-	3. mso conditional: For Windows 10 Mail
--->
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
-  <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #222222;">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #F1F3F5;">
+  <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #F1F3F5;">
     <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F1F3F5;">
     <tr>
     <td>
     <![endif]-->
@@ -231,21 +228,44 @@
         </div>
         <!-- Preview Text Spacing Hack : END -->
 
-        <!--
-            Set the email width. Defined in two places:
-            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 680px.
-            2. MSO tags for Desktop Windows Outlook enforce a 680px width.
-            Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.
-        -->
-        <div style="max-width: 680px; margin: 0 auto;" class="email-container">
+        <div style="max-width: 600px; margin: 0 auto;" class="email-container">
             <!--[if mso]>
-            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="680">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
             <tr>
             <td>
             <![endif]-->
 
 	        <!-- Email Body : BEGIN -->
-            
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <!-- Email Logo : BEGIN -->
+                <tr>
+                    <td style="background-color: #B91C22;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <!-- Clear Spacer : BEGIN -->
+                            <tr>
+                                <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <!-- Clear Spacer : END -->
+                            <tr>
+                                <td align="center">
+                                    <img src="img/logo.png" alt="Travel World logo" width="65" height="auto" border="0" style="max-width: 65px; width: 100%; height: auto; background-color: #B91C22;
+                                    color: #ffffff; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; line-height: 20px;">
+                                </td>
+                            </tr>
+                            <!-- Clear Spacer : BEGIN -->
+                            <tr>
+                                <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <!-- Clear Spacer : END -->
+                        </table>
+                    </td>
+                </tr>
+                <!-- Email Logo : END -->
+            </table>
             <!-- Email Body : END -->
 
             <!--[if mso]>
