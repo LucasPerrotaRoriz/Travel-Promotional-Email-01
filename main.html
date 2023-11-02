@@ -46,10 +46,15 @@
 
         html,
         body {
-            margin: 0 auto !important;
-            padding: 0 !important;
-            height: 100% !important;
-            width: 100% !important;
+            margin: 0 auto!important;
+            padding: 0!important;
+            height: 100%!important;
+            width: 100%!important;
+        }
+
+        body {
+            background-color: #F1F3F5;
+            mso-line-height-rule: exactly;
         }
 
         * {
@@ -58,24 +63,24 @@
         }
 
         div[style*="margin: 16px 0"] {
-            margin: 0 !important;
+            margin: 0!important;
         }
         
         #MessageViewBody, #MessageWebViewDiv{
-            width: 100% !important;
+            width: 100%!important;
         }
 
         table,
         td {
-            mso-table-lspace: 0pt !important;
-            mso-table-rspace: 0pt !important;
+            mso-table-lspace: 0pt!important;
+            mso-table-rspace: 0pt!important;
         }
 
         table {
-            border-spacing: 0 !important;
-            border-collapse: collapse !important;
-            table-layout: fixed !important;
-            margin: 0 auto !important;
+            border-spacing: 0!important;
+            border-collapse: collapse!important;
+            table-layout: fixed!important;
+            margin: 0 auto!important;
         }
 
         img {
@@ -89,41 +94,41 @@
         a[x-apple-data-detectors],  
         .unstyle-auto-detected-links a,
         .aBn {
-            border-bottom: 0 !important;
-            cursor: default !important;
-            color: inherit !important;
-            text-decoration: none !important;
-            font-size: inherit !important;
-            font-family: inherit !important;
-            font-weight: inherit !important;
-            line-height: inherit !important;
+            border-bottom: 0!important;
+            cursor: default!important;
+            color: inherit!important;
+            text-decoration: none!important;
+            font-size: inherit!important;
+            font-family: inherit!important;
+            font-weight: inherit!important;
+            line-height: inherit!important;
         }
 
         .im {
-            color: inherit !important;
+            color: inherit!important;
         }
 
         .a6S {
-            display: none !important;
-            opacity: 0.01 !important;
+            display: none!important;
+            opacity: 0.01!important;
         }
         img.g-img + div {
-            display: none !important;
+            display: none!important;
         }
 
         @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
             u ~ div .email-container {
-                min-width: 320px !important;
+                min-width: 320px!important;
             }
         }
         @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
             u ~ div .email-container {
-                min-width: 375px !important;
+                min-width: 375px!important;
             }
         }
         @media only screen and (min-device-width: 414px) {
             u ~ div .email-container {
-                min-width: 414px !important;
+                min-width: 414px!important;
             }
         }
 
@@ -135,44 +140,51 @@
 	    }
 	    .button-td-primary:hover,
 	    .button-a-primary:hover {
-	        background: #555555 !important;
-	        border-color: #555555 !important;
+	        background: #B91C22!important;
+            color: #ffffff!important;
+	        border-color: #B91C22!important;
 	    }
 
-	    @media screen and (max-width: 480px) {
+	    @media screen and (max-width: 600px) {
 	        .stack-column,
 	        .stack-column-center {
-	            display: block !important;
-	            width: 100% !important;
-	            max-width: 100% !important;
-	            direction: ltr !important;
+	            display: block!important;
+	            width: 100%!important;
+	            max-width: 100%!important;
+	            direction: ltr!important;
+                height: auto!important;
 	        }
 	        .stack-column-center {
-	            text-align: center !important;
+	            text-align: center!important;
 	        }
 
 	        .center-on-narrow {
-	            text-align: center !important;
-	            display: block !important;
-	            margin-left: auto !important;
-	            margin-right: auto !important;
-	            float: none !important;
+	            text-align: center!important;
+	            display: block!important;
+	            margin-left: auto!important;
+	            margin-right: auto!important;
+	            float: none!important;
 	        }
 	        table.center-on-narrow {
-	            display: inline-block !important;
+	            display: inline-block!important;
 	        }
 
 	        .email-container p {
-	            font-size: 17px !important;
+	            font-size: 17px!important;
 	        }
+
+            .button {
+                display: inline-block;
+                width: 60%;
+            }
 	    }
 
         @media (prefers-color-scheme: dark) {
             .email-bg {
-                background: #111111 !important;
+                background: #111111!important;
             }
             .darkmode-bg {
-                background: #222222 !important;
+                background: #222222!important;
             }
             h1,
             h2,
@@ -181,24 +193,24 @@
             li,
             .darkmode-text,
             .email-container a:not([class]) {
-                color: #F7F7F9 !important;
+                color: #F7F7F9!important;
             }
             td.button-td-primary,
             td.button-td-primary a {
-                background: #ffffff !important;
-                border-color: #ffffff !important;
-                color: #222222 !important;
+                background: #ffffff!important;
+                border-color: #ffffff!important;
+                color: #222222!important;
             }
             td.button-td-primary:hover,
             td.button-td-primary a:hover {
-                background: #cccccc !important;
-                border-color: #cccccc !important;
+                background: #cccccc!important;
+                border-color: #cccccc!important;
             }
             .footer td {
-                color: #aaaaaa !important;
+                color: #aaaaaa!important;
             }
             .darkmode-fullbleed-bg {
-                background-color: #0F3016 !important;
+                background-color: #0F3016!important;
             }
         }
     </style>
@@ -226,7 +238,7 @@
 
         <div style="max-width: 600px; margin: 0 auto;" class="email-container">
             <!--[if mso]>
-            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="680">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
             <tr>
             <td>
             <![endif]-->
@@ -271,9 +283,15 @@
                                             <tr>
                                                 <td height="260" align="center" style="width: 600px; height: 260px; font-family: 'Tahoma', Helvetica Neue, 'Helvetica', Arial, 'Lucida Grande', sans-serif;
                                                 padding: 40px 20px 10px; color: #ffffff;">
-                                                    <h2 style="font-size: 14px; color: #F6A21E; margin-bottom: 5px;">Save 30% on your next vacation</h2>
-                                                    <h1 style="font-size: 60px; font-weight: normal; line-height: 60px; margin: 0 0 0;">Journey</h1>
-                                                    <h2 style="font-size: 53px; font-weight: bold; line-height: 50px; margin: 0;">South Pacific Princess</h2>
+                                                    <h2 style="font-size: 14px; color: #F6A21E; margin-bottom: 5px;">
+                                                        Save 30% on your next vacation
+                                                    </h2>
+                                                    <h1 style="font-size: 60px; font-weight: normal; line-height: 60px; margin: 0 0 0;">
+                                                        Journey
+                                                    </h1>
+                                                    <h2 style="font-size: 53px; font-weight: bold; line-height: 50px; margin: 0;">
+                                                        South Pacific Princess
+                                                    </h2>
                                                 </td>
                                             </tr>
                                         </table>
@@ -295,6 +313,222 @@
                     </td>
                 </tr>
                 <!-- Background Image with Text : END -->
+
+                <!-- Find out more : BEGIN -->
+                <tr>
+                    <td>
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="font-family: 'Tahoma', Helvetica Neue, Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 15px;
+                                font-weight: bold; text-transform: uppercase; text-align: center; background-color: #F6A21E; color: #242424; padding: 40px 60px;">
+                                    <h2 style="font-size: 20px; margin-bottom: 5px; color: #B91C22;">From $2980/PP</h2>
+                                    <span style="font-size: 12px; text-decoration:line-through; color: #A96800;">was $3950/PP</span>
+                                    <p width="80%" style="width: 80%; margin-top: 20px; margin-bottom: 20px; 
+                                    margin-left: auto; margin-right: auto;font-weight: normal; line-height: 24px; text-transform: none;">
+                                        South Pacific islands have a lot more to offer than cruises and resorts. 
+                                        Dreaming of exploring these out-of-this-world islands? 
+                                        There is a wealth of culture and adventurous activities for you to discover 
+                                        along with the most iconic sites and amazing foods.
+                                    </p>
+                                    <!-- Button : BEGIN -->
+                                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                                        <tr>
+                                            <td class="button-td button-td-primary" style="background: #F6A21E;">
+											    <a class="button-a button-a-primary" href="https://github.com/LucasPerrotaRoriz/Travel-Promotional-Email-01" style="background: #F6A21E; border: 1px solid #B91C22; 
+                                                font-family: 'Tahoma', Helvetica Neue, Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 13px; font-weight: normal; line-height: 15px;
+                                                text-decoration: none; padding: 15px 30px; color: #242424; display: block;">
+                                                    Find out more
+                                                </a>
+											</td>
+                                        </tr>
+                                    </table>
+                                    <!-- Button : END -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Find out more : END -->
+
+                <!-- Highlights  : BEGIN -->
+                <tr>
+                    <td align="center" style="background-color: #E9EFF6;">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="text-align: center;">
+                                    <h2 style="font-family: 'Montserrat', Helvetica Neue, 'Helvetica', Arial, 'Lucida Grande', sans-serif;
+                                    font-size: 35px; line-height: 50px; margin-top: 30px; margin-bottom: 0px; color: #B91C22;">
+                                        Wild, Wild Waters
+                                    </h2>
+                                    <p style="font-family: 'Tahoma', Helvetica Neue, 'Helvetica', Arial, 'Lucida Grande', sans-serif;
+                                    font-size: 15px; line-height: 25px; margin-top: 0px; color: #242424;">
+                                        Check off some well-deserved bucket list items affordably.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <!-- 3 Even Columns : BEGIN -->
+                                        <tr>
+                                            <td align="center" valign="top" style="font-size:0; padding-top: 20px;" class="darkmode-bg">
+                                                <!--[if mso]>
+                                                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="580">
+                                                <tr>
+                                                <td valign="middle" width="190" style="width: 190px;">
+                                                <![endif]-->
+                                                <div style="display:inline-block; margin: 0 -1px; max-width: 190px; vertical-align:middle; width:100%;" class="stack-column">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td style="padding: 10px;">
+                                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img src="https://raw.githubusercontent.com/LucasPerrotaRoriz/Images/main/Travel-Promo-Email-01-img/highlight-1.jpg" width="200" height="" 
+                                                                            border="0" alt="Highlights 1 Australia" style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; 
+                                                                            font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; text-align: center; color: #555555; padding: 10px;" class="stack-column-center">
+                                                                            <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px; color: #000000;">
+                                                                                Highlights of <br />Australia
+                                                                            </h3>
+                                                                            <p style="font-size: 12px; margin: 0; color: #959595;">
+                                                                                12 day tour from Melbourne to Sydney
+                                                                            </p>
+                                                                            <p style="font-size: 13px; font-weight: 700; margin: 5px 0 20px; color: #B91C22;">
+                                                                                from $1850/pp
+                                                                            </p>
+                                                                            <!-- Button : BEGIN -->
+                                                                            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                                                                                <tr>
+                                                                                    <td class="button-td button-td-primary" style="background: #E9EFF6;">
+                                                                                        <a class="button-a button-a-primary" href="https://github.com/LucasPerrotaRoriz/Travel-Promotional-Email-01" style="background: #E9EFF6; border: 1px solid #959595; 
+                                                                                        font-family: 'Tahoma', Helvetica Neue, Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; font-weight: normal; line-height: 15px;
+                                                                                        text-decoration: none; padding: 10px 40px; color: #959595; display: block;">
+                                                                                            More Info
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Button : END -->
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso]>
+                                                </td>
+                                                <td valign="middle" width="190" style="width: 190px;">
+                                                <![endif]-->
+                                                <div style="display:inline-block; margin: 0 -1px; max-width: 190px; vertical-align:middle; width:100%;" class="stack-column">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td style="padding: 10px;">
+                                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img src="https://raw.githubusercontent.com/LucasPerrotaRoriz/Images/main/Travel-Promo-Email-01-img/highlight-2.jpg" width="200" height="" 
+                                                                            border="0" alt="Highlights 1 Australia" style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; 
+                                                                            font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; text-align: center; color: #555555; padding: 10px;" class="stack-column-center">
+                                                                            <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px; color: #000000;">
+                                                                                Highlights of <br /> New Zealand
+                                                                            </h3>
+                                                                            <p style="font-size: 12px; margin: 0; color: #959595;">
+                                                                                11 day tour from Auckland to Queenstown
+                                                                            </p>
+                                                                            <p style="font-size: 13px; font-weight: 700; margin: 5px 0 20px; color: #B91C22;">
+                                                                                from $1920/pp
+                                                                            </p>
+                                                                            <!-- Button : BEGIN -->
+                                                                            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                                                                                <tr>
+                                                                                    <td class="button-td button-td-primary" style="background: #E9EFF6;">
+                                                                                        <a class="button-a button-a-primary" href="https://github.com/LucasPerrotaRoriz/Travel-Promotional-Email-01" style="background: #E9EFF6; border: 1px solid #959595; 
+                                                                                        font-family: 'Tahoma', Helvetica Neue, Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; font-weight: normal; line-height: 15px;
+                                                                                        text-decoration: none; padding: 10px 40px; color: #959595; display: block;">
+                                                                                            More Info
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Button : END -->
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso]>
+                                                </td>
+                                                <td valign="middle" width="190" style="width: 190px;">
+                                                <![endif]-->
+                                                <div style="display:inline-block; margin: 0 -1px; max-width: 190px; vertical-align:middle; width:100%;" class="stack-column">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td style="padding: 10px;">
+                                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img src="https://raw.githubusercontent.com/LucasPerrotaRoriz/Images/main/Travel-Promo-Email-01-img/highlight-3.jpg" width="200" height="" 
+                                                                            border="0" alt="Highlights 1 Australia" style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; 
+                                                                            font-size: 15px; line-height: 20px; color: #555555;" class="center-on-narrow">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; text-align: center; color: #555555; padding: 10px;" class="stack-column-center">
+                                                                            <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px; color: #000000;">
+                                                                                Highlights of <br /> Australia with Fiji
+                                                                            </h3>
+                                                                            <p style="font-size: 12px; margin: 0; color: #959595;">
+                                                                                15 day tour from Melbourne to Coral Coast
+                                                                            </p>
+                                                                            <p style="font-size: 13px; font-weight: 700; margin: 5px 0 20px; color: #B91C22;">
+                                                                                from $2970/pp
+                                                                            </p>
+                                                                            <!-- Button : BEGIN -->
+                                                                            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                                                                                <tr>
+                                                                                    <td class="button-td button-td-primary" style="background: #E9EFF6;">
+                                                                                        <a class="button-a button-a-primary" href="https://github.com/LucasPerrotaRoriz/Travel-Promotional-Email-01" style="background: #E9EFF6; border: 1px solid #959595; 
+                                                                                        font-family: 'Tahoma', Helvetica Neue, Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; font-weight: normal; line-height: 15px;
+                                                                                        text-decoration: none; padding: 10px 40px; color: #959595; display: block;">
+                                                                                            More Info
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <!-- Button : END -->
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]-->
+                                            </td>
+                                        </tr>
+                                        <!-- 3 Even Columns : END -->
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Highlights  : END -->
             </table>
             <!-- Email Body : END -->
 
